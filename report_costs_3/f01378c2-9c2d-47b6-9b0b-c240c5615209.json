@@ -1,0 +1,351 @@
+{
+  "calculated_at": "2026-01-07T12:15:44.910535Z",
+  "cost": {
+    "by_team": {
+      "entity_resolution": {
+        "comply_advantage": 0,
+        "compute": 0,
+        "documents": 0,
+        "llm": 8.21,
+        "other_data_providers": 0,
+        "temporal": 0
+      },
+      "investigative_flow": {
+        "comply_advantage": 0.3,
+        "compute": 0,
+        "documents": 7.76,
+        "llm": 2.68,
+        "other_data_providers": 1.13,
+        "temporal": 0
+      },
+      "other": {
+        "comply_advantage": 0,
+        "compute": 0.24,
+        "documents": 0,
+        "llm": 0,
+        "other_data_providers": 0,
+        "temporal": 0.01
+      },
+      "report_content_generation": {
+        "comply_advantage": 0,
+        "compute": 0,
+        "documents": 0,
+        "llm": 2.69,
+        "other_data_providers": 0,
+        "temporal": 0
+      }
+    },
+    "components": {
+      "comply_advantage": 0.3,
+      "compute": 0.24,
+      "documents": 7.76,
+      "llm": 13.58,
+      "other_data_providers": 1.13,
+      "temporal": 0.01
+    },
+    "teams": {
+      "entity_resolution": 8.21,
+      "investigative_flow": 11.87,
+      "other": 0.25,
+      "report_content_generation": 2.69
+    },
+    "total": 23.02
+  },
+  "report_id": "f01378c2-9c2d-47b6-9b0b-c240c5615209",
+  "sources": {
+    "llm": {
+      "available": true
+    },
+    "temporal": {
+      "available": true
+    },
+    "xdoc": {
+      "available": true
+    }
+  },
+  "usage": {
+    "by_team": {
+      "entity_resolution": {
+        "llm": {
+          "avg_tpm": 4475608.85,
+          "by_user": [
+            {
+              "avg_tpm": 4475608.85,
+              "by_model": [
+                {
+                  "avg_tpm": 31369.88,
+                  "cached": 0,
+                  "input": 156587,
+                  "max_tpm": 80920,
+                  "model": "perplexity/sonar",
+                  "output": 5828,
+                  "requests": 312,
+                  "tokens": 162415
+                },
+                {
+                  "avg_tpm": 286098.76,
+                  "cached": 58951,
+                  "input": 2399239,
+                  "max_tpm": 627429,
+                  "model": "gemini/gemini-2.5-flash",
+                  "output": 221219,
+                  "requests": 787,
+                  "tokens": 2620458
+                },
+                {
+                  "avg_tpm": 40376.93,
+                  "cached": 110592,
+                  "input": 186849,
+                  "max_tpm": 198890,
+                  "model": "openai/gpt-4.1",
+                  "output": 49345,
+                  "requests": 89,
+                  "tokens": 236194
+                },
+                {
+                  "avg_tpm": 4085060.68,
+                  "cached": 0,
+                  "input": 29776157,
+                  "max_tpm": 11417059,
+                  "model": "gemini/gemini-2.0-flash",
+                  "output": 1253827,
+                  "requests": 2803,
+                  "tokens": 31029984
+                },
+                {
+                  "avg_tpm": 1634494.61,
+                  "cached": 0,
+                  "input": 6818877,
+                  "max_tpm": 6942480,
+                  "model": "openai/gpt-4.1-nano",
+                  "output": 125417,
+                  "requests": 2462,
+                  "tokens": 6944294
+                }
+              ],
+              "cached": 169543,
+              "input": 39337709,
+              "max_tpm": 18523033,
+              "output": 1655636,
+              "requests": 6453,
+              "tokens": 40993345,
+              "user": "dev01-xv4-entity-resolution"
+            }
+          ],
+          "cached": 169543,
+          "input": 39337709,
+          "max_tpm": 18523033,
+          "output": 1655636,
+          "requests": 6453,
+          "tokens": 40993345
+        },
+        "temporal": {
+          "actions": 0,
+          "activities": 0,
+          "workflows": 0
+        }
+      },
+      "investigative_flow": {
+        "llm": {
+          "avg_tpm": 1485388.54,
+          "by_user": [
+            {
+              "avg_tpm": 1485388.54,
+              "by_model": [
+                {
+                  "avg_tpm": 1382733.2,
+                  "cached": 167621,
+                  "input": 5045841,
+                  "max_tpm": 4923862,
+                  "model": "gemini/gemini-2.5-flash-lite",
+                  "output": 2811697,
+                  "requests": 768,
+                  "tokens": 7857538
+                },
+                {
+                  "avg_tpm": 653443.7,
+                  "cached": 314112,
+                  "input": 5428348,
+                  "max_tpm": 3521960,
+                  "model": "openai/gpt-4o-mini",
+                  "output": 354351,
+                  "requests": 175,
+                  "tokens": 5782699
+                }
+              ],
+              "cached": 481733,
+              "input": 10474189,
+              "max_tpm": 8445822,
+              "output": 3166048,
+              "requests": 943,
+              "tokens": 13640237,
+              "user": "dev01-xv4-if-collector-web-content-extraction"
+            }
+          ],
+          "cached": 481733,
+          "input": 10474189,
+          "max_tpm": 8445822,
+          "output": 3166048,
+          "requests": 943,
+          "tokens": 13640237
+        },
+        "temporal": {
+          "actions": 0,
+          "activities": 0,
+          "workflows": 0
+        }
+      },
+      "other": {
+        "llm": {
+          "avg_tpm": 0,
+          "cached": 0,
+          "input": 0,
+          "max_tpm": 0,
+          "output": 0,
+          "requests": 0,
+          "tokens": 0
+        },
+        "temporal": {
+          "actions": 521,
+          "activities": 519,
+          "by_workflow_type": [
+            {
+              "actions": 521,
+              "activities": 519,
+              "workflow_type": "ASK_XAPIEN_WORKFLOW",
+              "workflows": 1
+            }
+          ],
+          "workflows": 1
+        }
+      },
+      "report_content_generation": {
+        "llm": {
+          "avg_tpm": 1358593.42,
+          "by_user": [
+            {
+              "avg_tpm": 1358593.42,
+              "by_model": [
+                {
+                  "avg_tpm": 1584469.58,
+                  "cached": 0,
+                  "input": 3677431,
+                  "max_tpm": 3316394,
+                  "model": "gemini/gemini-2.0-flash",
+                  "output": 20076,
+                  "requests": 309,
+                  "tokens": 3697507
+                },
+                {
+                  "avg_tpm": 447233.66,
+                  "cached": 82582,
+                  "input": 3557223,
+                  "max_tpm": 2053097,
+                  "model": "gemini/gemini-2.5-flash",
+                  "output": 145301,
+                  "requests": 804,
+                  "tokens": 3702524
+                },
+                {
+                  "avg_tpm": 13354.06,
+                  "cached": 0,
+                  "input": 56588,
+                  "max_tpm": 25615,
+                  "model": "gemini/gemini-2.5-pro",
+                  "output": 3511,
+                  "requests": 15,
+                  "tokens": 60099
+                },
+                {
+                  "avg_tpm": 1692636.63,
+                  "cached": 4301,
+                  "input": 3096943,
+                  "max_tpm": 3609668,
+                  "model": "gemini/gemini-2.5-flash-lite",
+                  "output": 690349,
+                  "requests": 516,
+                  "tokens": 3787292
+                }
+              ],
+              "cached": 86883,
+              "input": 10388185,
+              "max_tpm": 4611521,
+              "output": 859237,
+              "requests": 1644,
+              "tokens": 11247422,
+              "user": "dev01-xv4-report-content-generation-activities"
+            }
+          ],
+          "cached": 86883,
+          "input": 10388185,
+          "max_tpm": 4611521,
+          "output": 859237,
+          "requests": 1644,
+          "tokens": 11247422
+        },
+        "temporal": {
+          "actions": 0,
+          "activities": 0,
+          "workflows": 0
+        }
+      }
+    },
+    "components": {
+      "documents": {
+        "breakdown": {
+          "CORPORATE_DATA_PROFILE": 17,
+          "LINKEDIN_PROFILE": 10,
+          "PEPS_SANCTIONS_WATCHLISTS_SCREENING_HIT": 136,
+          "WEB_CONTENT": 865,
+          "WIKIPEDIA_PROFILE": 6
+        },
+        "total": 1034
+      },
+      "llm": {
+        "avg_tpm": 2453509.49,
+        "cached": 738159,
+        "input": 60200083,
+        "max_tpm": 18523033,
+        "output": 5680921,
+        "requests": 9040,
+        "tokens": 65881004
+      },
+      "temporal": {
+        "actions": 521,
+        "activities": 519,
+        "avg_actions_per_sec": 43.54,
+        "avg_workflows_per_sec": 0.08,
+        "duration_seconds": 11.97,
+        "max_actions_per_sec": 516,
+        "max_workflows_per_sec": 1,
+        "workflows": 1
+      }
+    },
+    "teams": {
+      "entity_resolution": {
+        "llm_requests": 6453,
+        "llm_tokens": 40993345,
+        "temporal_actions": 0,
+        "temporal_workflows": 0
+      },
+      "investigative_flow": {
+        "llm_requests": 943,
+        "llm_tokens": 13640237,
+        "temporal_actions": 0,
+        "temporal_workflows": 0
+      },
+      "other": {
+        "llm_requests": 0,
+        "llm_tokens": 0,
+        "temporal_actions": 521,
+        "temporal_workflows": 1
+      },
+      "report_content_generation": {
+        "llm_requests": 1644,
+        "llm_tokens": 11247422,
+        "temporal_actions": 0,
+        "temporal_workflows": 0
+      }
+    }
+  }
+}
